@@ -1,0 +1,97 @@
+:root{
+   --text: #FFFFFF;
+   --nottext: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--nottext);
+  color: var(--text);
+}
+
+a {
+  color: var(--text);
+}
+
+.navbar{
+  margin: 0;
+  padding: 15px;
+}
+
+.navbar > a {
+  float: right;
+  margin-left: 30px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.navbar > span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.content{
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.glance-content{
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+}
+
+.recipe-card{
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.recipe-card > img{
+  float: left;
+  margin-right: 20px;
+}
+
+.recipe-card > a{
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.recipe-card > p{
+  margin-top: 5px;
+}
+
+img {
+  object-fit: none !important; /* Do not scale the image */
+  object-position: center !important; /* Center the image within the element */
+}
+
+.cover-image{
+  width: 600px;
+  height: 400px;
+}
+
+.attribution-content{
+  margin-top: 50px;  
+}
+
+@media only screen and (max-width: 700px) {
+  img :not(.recipe-card){
+    width: 100% !important;
+    height: auto !important;
+    max-height: 400px;
+  }
+  .glance-content{
+    margin-left: 0px;
+    display: block;
+    vertical-align: top;
+    width: auto;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid;
+  }
+}
