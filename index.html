@@ -1,0 +1,49 @@
+<head>
+  <title>Cookbox</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<div class="navbar">
+  <span>COOKBOX</span>
+  <a onclick="togglelights()">lights</a>
+  <a href="recipes">recipes</a>
+</div>
+
+<div class="content">
+  <h1>Welcome to Cookbox.</h1>
+  <p>Cookbox hosts recipes in the public domain. If you would like to submit a recipe then please leave a pull request in the <a href="https://github.com/input-variable/cookbox">github repo</a>.</p><p>
+  If you would like to see recipes then you can press that niftly little link on the top right. Next to that is the lightswitch. It creates a small cookie in your browser so you don't have to toggle it every time you load a new page.
+  </p>
+  <br>
+  <p>
+  Lastly, I would like to apologise for my messy code. I wrote this in a couple of hours after watching <a href="https://www.youtube.com/watch?v=wY70NCW98Is">a video</a> that gave me this idea. If this gains traction I will rewrite 90% of this. I'll be looking for maintainers to help accept pull requests soon. This site was made by <a href="https://github.com/input-variable">nakotami.</a>
+  </p>
+</div>
+
+<script>
+function loadlights(){
+  var x = document.cookie;
+
+  if (x == "lights=off"){
+    document.documentElement.style.setProperty('--text', '#FFFFFF');
+    document.documentElement.style.setProperty('--nottext', '#000000');
+
+  } else {
+    document.documentElement.style.setProperty('--text', '#000000');
+    document.documentElement.style.setProperty('--nottext', '#FFFFFF');
+  }
+}
+
+function togglelights(){
+  var x = document.cookie;
+  
+  if (x == "lights=off"){
+  	document.cookie = "lights=on";
+  } else {
+  	document.cookie = "lights=off";
+  }
+  loadlights();
+}
+
+loadlights();
+</script>
