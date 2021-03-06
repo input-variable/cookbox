@@ -23,6 +23,7 @@ a {
   margin-left: 30px;
   text-decoration: none;
   color: var(--text);
+  cursor: pointer;
 }
 
 .navbar > span {
