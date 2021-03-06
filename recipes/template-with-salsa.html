@@ -1,0 +1,77 @@
+<head>
+  <title>Cookbox</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<div class="navbar">
+  <span>COOKBOX</span>
+  <a onclick="togglelights()">lights</a>
+  <a href="recipes">recipes</a>
+</div>
+
+<div class="content">
+  <img class="cover-image" src="https://i.imgur.com/j5Sp6Mm.png">
+  <div class="glance-content">
+    <h1>Recipe Name</h1>
+    <p><b>Preperation time:</b> 0 mins</p>
+    <p><b>Cooking time:</b> 0 mins</p>
+    <p><b>Serves:</b> 0</p>
+    <p>Please write a short description about your recipe. Caloric info is nice to include.</p>
+  </div>
+  <div class="recipe-content">
+    <h2>Ingredients</h2>
+    <h3>For part x</h3>
+    <ul>
+      <li>An ingredient (100g)</li>
+      <li>An ingredient (200g)</li>
+    </ul>
+    <h3>For part y</h3>
+    <ul>
+      <li>An ingredient (100g)</li>
+      <li>An ingredient (200g)</li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+      <li>Instruction 1</li>
+      <li>Instruction 2</li>
+      <li>Instruction 3</li>
+      <img src="https://i.imgur.com/SmWJhYU.png">
+      <li>Instruction 4</li>
+    </ol>
+    <div class="attribution-content">
+      <h4>Written by Name</h4>
+      <p>Info about you (optional)</p>
+      <a href="#">Your link</a>
+      <a href="#">Your link</a>
+      <a href="#">Your link</a>     
+    </div>
+  </div>
+</div>
+
+<script>
+function loadlights(){
+  var x = document.cookie;
+
+  if (x == "lights=off"){
+    document.documentElement.style.setProperty('--text', '#FFFFFF');
+    document.documentElement.style.setProperty('--nottext', '#000000');
+
+  } else {
+    document.documentElement.style.setProperty('--text', '#000000');
+    document.documentElement.style.setProperty('--nottext', '#FFFFFF');
+  }
+}
+
+function togglelights(){
+  var x = document.cookie;
+  
+  if (x == "lights=off"){
+  	document.cookie = "lights=on";
+  } else {
+  	document.cookie = "lights=off";
+  }
+  loadlights();
+}
+
+loadlights();
+</script>
