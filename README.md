@@ -9,6 +9,7 @@ For now, the general idea is to create a pull request with a new recipe (copied 
 - Please do not change html outside of the content div, you are free to put stuff inside the content div but please follow the general structure that is given. 
 - You can include JS but only if it adds to the article and isn't bloat. The chances of me accepting javascript is 1 in 30 so don't bother if it isn't essential.
 - You can include CSS but only if it adds to the article and isn't bloat. The chances of me accepting CSS is 1 in 10 so try to avoid it.
+- Stick to the listed image resolutions until I remove this line.
 
 [Inspired by Luke Smith](https://www.youtube.com/watch?v=wY70NCW98Is)
 
