@@ -81,6 +81,10 @@ img {
   margin-top: 50px;  
 }
 
+ol > li {
+   padding: 10px;
+}
+
 @media only screen and (max-width: 700px) {
   img :not(.recipe-card){
     width: 100% !important;
