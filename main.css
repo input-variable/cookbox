@@ -52,6 +52,8 @@ a {
 .recipe-card > img{
   float: left;
   margin-right: 20px;
+  width: 100px;
+  height: 70px;
 }
 
 .recipe-card > a{
