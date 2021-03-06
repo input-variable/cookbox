@@ -1,4 +1,4 @@
-# cookbox
+# ![](https://i.imgur.com/Ok3cUaq.png)
 An open-source cook book created by all of you.
 
 ### Instructions on how to submit are coming soon. 
