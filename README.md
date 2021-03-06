@@ -2,7 +2,7 @@
 An open-source cook book created by all of you.
 
 ### Instructions on how to submit are coming soon. 
-For now, the general idea is to create a pull request with a new recipe (copied from recipes/template-salsa.html). 
+For now, the general idea is to create a pull request with a new recipe (copied from `recipes/template-with-salsa.html`). 
 - Please use hyphens in the file name to represent spaces
 - The file name should be close to the title of the recipe. 
 - All images can be hosted either on imgur, or in the images directory. 
