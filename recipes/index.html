@@ -1,0 +1,48 @@
+<head>
+  <title>Cookbox</title>
+  <link rel="stylesheet" href="../main.css">
+</head>
+
+<div class="navbar">
+  <span>COOKBOX</span>
+  <a onclick="togglelights()">lights</a>
+  <a href="recipes">recipes</a>
+</div>
+
+<div class="content">
+  <h1>The Recipe Index</h1>
+  <p>Add your recipe to this list once it has been written. Right now it just loads everything on one page, I'll probably write something in the future that has catagories and proper sorting.</p>
+  <div class="recipe-card">
+    <img src="https://i.imgur.com/xS4SzKK.png">
+    <a href="recipes/template">Title</a>
+    <p>This is a template card. Use this as a reference.</p>
+  </div>
+  
+
+<script>
+function loadlights(){
+  var x = document.cookie;
+
+  if (x == "lights=off"){
+    document.documentElement.style.setProperty('--text', '#FFFFFF');
+    document.documentElement.style.setProperty('--nottext', '#000000');
+
+  } else {
+    document.documentElement.style.setProperty('--text', '#000000');
+    document.documentElement.style.setProperty('--nottext', '#FFFFFF');
+  }
+}
+
+function togglelights(){
+  var x = document.cookie;
+  
+  if (x == "lights=off"){
+  	document.cookie = "lights=on";
+  } else {
+  	document.cookie = "lights=off";
+  }
+  loadlights();
+}
+
+loadlights();
+</script>
