@@ -1,7 +1,7 @@
 function loadlights(){
   var x = document.cookie;
 
-  if (x == "lights=off; path=/cookbox"){
+  if (x == "lights=off"){
     document.documentElement.style.setProperty('--text', '#FFFFFF');
     document.documentElement.style.setProperty('--nottext', '#000000');
 
@@ -14,7 +14,7 @@ function loadlights(){
 function togglelights(){
   var x = document.cookie;
   
-  if (x == "lights=off; path=/cookbox"){
+  if (x == "lights=off"){
   	document.cookie = "lights=on; path=/cookbox";
   } else {
   	document.cookie = "lights=off; path=/cookbox";
